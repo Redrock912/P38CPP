@@ -26,6 +26,16 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
-	
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Data")
+		class UBoxComponent* Box;
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Data")
+		class UStaticMeshComponent* Body;
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Data")
+		class UStaticMeshComponent* Left;
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Data")
+		class UStaticMeshComponent* Right;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Data")
+	class UFloatingPawnMovement* Movement;
 	
 };
