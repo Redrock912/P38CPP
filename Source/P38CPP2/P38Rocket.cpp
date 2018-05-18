@@ -7,7 +7,7 @@
 #include "UObject/ConstructorHelpers.h"
 #include "TimerManager.h"
 #include "Kismet/GameplayStatics.h"
-#include "P38Rocket.h"
+
 
 // Sets default values
 AP38Rocket::AP38Rocket()
